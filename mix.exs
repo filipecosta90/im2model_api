@@ -39,6 +39,8 @@ defmodule Im2modelApi.Mixfile do
       {:postgrex, ">= 0.0.0"},
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
+      #Distillery
+      {:distillery, "~> 1.5", runtime: false},
       # Absinthe
       {:absinthe, "~> 1.3.0"},
       {:absinthe_ecto, "~> 0.1.2"},
