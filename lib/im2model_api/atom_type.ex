@@ -14,9 +14,9 @@ defmodule Im2modelApi.AtomType do
     field :electroneg, :float
     field :empirical_r, :float
     field :melting_pt, :float
-    field :name, :string
+    field :type_name, :string
     field :rasmol_color, :integer
-    field :symbol, :string
+    field :type_symbol, :string
     field :valence, :integer
     field :vdw_r, :float
 
@@ -26,7 +26,7 @@ defmodule Im2modelApi.AtomType do
   @doc false
   def changeset(atom_type, attrs) do
     atom_type
-    |> cast(attrs, [:name, :symbol, :atomic_number, :atomic_mass, :melting_pt, :boiling_pt, :electroneg, :electron_aff, :valence, :calculated_r, :empirical_r, :covalent_r, :vdw_r, :cpk_color, :rasmol_color])
-    |> validate_required([:name, :symbol, :atomic_number, :atomic_mass, :melting_pt, :boiling_pt, :electroneg, :electron_aff, :valence, :calculated_r, :empirical_r, :covalent_r, :vdw_r, :cpk_color, :rasmol_color])
+    |> cast(attrs, [:type_name, :type_symbol, :atomic_number, :atomic_mass, :melting_pt, :boiling_pt, :electroneg, :electron_aff, :valence, :calculated_r, :empirical_r, :covalent_r, :vdw_r, :cpk_color, :rasmol_color])
+    |> validate_required([:type_name, :type_symbol, :atomic_number, :atomic_mass, :melting_pt, :boiling_pt, :electroneg, :electron_aff, :valence, :calculated_r, :empirical_r, :covalent_r, :vdw_r, :cpk_color, :rasmol_color])
   end
 end

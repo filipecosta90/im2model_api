@@ -13,8 +13,8 @@
 #
 
 he = Im2modelApi.Repo.insert!(%Im2modelApi.AtomType{
-  name: "Hydrogen",
-  symbol: "H",
+  type_name: "Hydrogen",
+  type_symbol: "H",
   atomic_number: 1,
   atomic_mass: 1.00794,
   melting_pt: 14.01,

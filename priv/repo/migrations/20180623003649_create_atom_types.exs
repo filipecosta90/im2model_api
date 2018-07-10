@@ -3,8 +3,8 @@ defmodule Im2modelApi.Repo.Migrations.CreateAtomTypes do
 
   def change do
     create table(:atom_types) do
-      add :name, :string
-      add :symbol, :string
+      add :type_name, :string
+      add :type_symbol, :string
       add :atomic_number, :integer
       add :atomic_mass, :float
       add :melting_pt, :float
@@ -18,7 +18,6 @@ defmodule Im2modelApi.Repo.Migrations.CreateAtomTypes do
       add :vdw_r, :float
       add :cpk_color, :integer
       add :rasmol_color, :integer
-
       timestamps()
     end
 
